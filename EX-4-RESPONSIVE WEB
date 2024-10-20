@@ -1,0 +1,152 @@
+HTML CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Information of different cities</h2>
+    <p>This is a website that adapts to different screen sizes.</p>
+  </section>
+
+  <section class="content">
+    <article>
+      <h3>Mumbai</h3>
+      <p>Mumbai, the capital city of the Indian state of Maharashtra, is the financial,
+         commercial, and entertainment hub of India. It is one of the largest and most
+          populous cities in the world, with a population of over 20 million people. 
+          Known for its vibrant culture, historical landmarks.</p>
+    </article>
+    <article>
+      <h3>Pune</h3>
+      <p>Pune is a prominent city in the western Indian state of Maharashtra. Known for its rich cultural heritage, vibrant lifestyle, and educational institutions, Pune has emerged as one of India’s major cities for technology, education, and business.</p>
+    </article>
+    <article>
+      <h3>Delhi</h3>
+      <p>Delhi, the capital city of India, is one of the country’s most important and historical cities. It is a vibrant metropolis known for its rich history, diverse culture, and political significance. </p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Responsive Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+CSS CODE:
+/* Basic styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e2e2e2;
+  }
+  
+  article {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Media Queries for responsive design */
+  
+  /* Small screens (phones) */
+  @media (max-width: 600px) {
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 900px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    article {
+      margin: 20px 0;
+    }
+  
+    .hero {
+      padding: 30px 20px;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media (min-width: 901px) {
+    .content {
+      flex-direction: row;
+    }
+  }
+  
