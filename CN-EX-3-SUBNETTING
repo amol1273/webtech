@@ -1,0 +1,25 @@
+import ipaddress
+
+def calculate_subnets(network_ip, subnet_prefix):
+    try:
+        # Create an IPv4Network object using the provided IP and prefix
+        network = ipaddress.IPv4Network(f"{network_ip}/{subnet_prefix}", strict=False)
+
+        print(f"\nNetwork Address: {network.network_address}")
+        print(f"Broadcast Address: {network.broadcast_address}")
+        print(f"Subnet Mask: {network.netmask}")
+        print(f"Number of Usable Hosts: {network.num_addresses - 2}")
+
+        # List all the available IPs in the subnet (excluding network and broadcast)
+        print("\nAvailable IPs:")
+        for ip in network.hosts():
+            print(ip)
+    except ValueError as e:
+        print(f"Invalid input: {e}")
+
+# Input from the user
+network_ip = input("Enter the network IP (e.g., 192.168.1.0): ")
+subnet_prefix = int(input("Enter the subnet prefix (e.g., 24): "))
+
+# Calculate the subnets and display details
+calculate_subnets(network_ip, subnet_prefix)
