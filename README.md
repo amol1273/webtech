@@ -1,1 +1,1 @@
-# webtech final practicals of web technology
+# computer network final practicals of web technology
