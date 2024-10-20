@@ -1,0 +1,36 @@
+import socket
+
+def dns_lookup():
+    while True:
+        print("\nDNS Lookup Options:")
+        print("1. Get IP address from Hostname (Forward Lookup)")
+        print("2. Get Hostname from IP address (Reverse Lookup)")
+        print("3. Exit")
+
+        choice = input("Enter your choice (1/2/3): ")
+
+        if choice == '1':
+            hostname = input("Enter the Hostname (e.g. www.google.com): ")
+            try:
+                # Get the IP address of the given hostname
+                ip_address = socket.gethostbyname(hostname)
+                print(f"IP address of {hostname} is: {ip_address}")
+            except socket.error as e:
+                print(f"Error: {e}")
+
+        elif choice == '2':
+            ip_address = input("Enter the IP address (e.g. 8.8.8.8): ")
+            try:
+                # Get the hostname for the given IP address
+                hostname, _, _ = socket.gethostbyaddr(ip_address)
+                print(f"Hostname corresponding to {ip_address} is: {hostname}")
+            except socket.error as e:
+                print(f"Error: {e}")
+
+        elif choice == '3':
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice, please try again.")
+
+dns_lookup()           
