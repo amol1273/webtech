@@ -1,0 +1,15 @@
+ import pandas as pd
+import numpy as np
+import math
+df=pd.read_csv("C:/Users/HP/OneDrive/Desktop/machine learning datasets/possum.csv")
+df
+df.isnull().sum()
+df1=df.dropna()
+df1.isnull().sum()
+df1['chest'].mean()
+df1['chest'].median()
+df1['chest'].mode()
+df1['chest'].std()
+
+#df.fillna(mean,inplace= True)   #to fill null values
+#mean = df.groupby(["species"])["sepal_length"].mean()
