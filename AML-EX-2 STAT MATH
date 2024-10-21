@@ -1,0 +1,43 @@
+ import statistics
+import pandas as pd
+import math
+import numpy as np
+import sys
+
+df=pd.read_csv("C:/Users/HP/OneDrive/Desktop/machine learning datasets/marksheet.csv")
+df
+
+df1=df['Science']
+mean=statistics.mean(df1)
+mean
+
+df1=df['Science']
+median=statistics.median(df1)
+median
+
+df1=df['Science']
+mode=statistics.mode(df1)
+mode
+
+sqr=math.sqrt(25)
+sqr  #gives squareroot
+
+log=math.log(25)
+log
+
+fact=math.factorial(5)
+fact
+
+square = math.pow(9, 2)
+square
+
+square=np.square(df['English'])  
+square
+
+version= sys.version
+version
+#The sys module in Python provides access to some variables and functions that interact with the Python runtime environment.
+#The sys library provides access to system-specific parameters and functions.
+#NumPy is a powerful library for numerical computations and array manipulations.
+#The statistics module provides functions to calculate mathematical statistics of numeric data.
+#The math library provides functions for mathematical operations such as factorials, trigonometry, logarithms, etc.
