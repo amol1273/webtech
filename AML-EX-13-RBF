@@ -1,0 +1,18 @@
+import numpy as np
+from sklearn.metrics import accuracy_score
+from sklearn.svm import SVC
+import matplotlib.pyplot as plt
+
+x=np.array([[0,0],[0,1],[1,0],[1,1]])
+y=np.array([0,1,1,0]) #XOR LOGIC
+
+# Create and train the RBF kernel SVM model
+rbf_svm = SVC(kernel='rbf', gamma='scale')  # Use RBF kernel
+rbf_svm.fit(x, y)
+
+# Make predictions
+y_pred = rbf_svm.predict(x)
+
+accuracy = accuracy_score(y, y_pred)
+print(f'Predictions: {y_pred}')
+print(f'Accuracy: {accuracy * 100:.2f}%')
