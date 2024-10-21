@@ -1,0 +1,38 @@
+ import pandas as pd
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+df=pd.read_csv("C:/Users/HP/OneDrive/Desktop/machine learning datasets/IRIS.csv")
+df
+
+x=df[['sepal_lenght','sepal_width','petal_lenght','petal_width']]
+y=df['class']
+
+from sklearn.model_selection import train_test_split
+
+X_train,x_test,Y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=26)
+
+from sklearn.cluster import KMeans
+
+k=KMeans(n_clusters=5)
+
+k.fit(X_train,Y_train)
+
+y_pred=k.predict(x_test)
+y_pred
+
+from sklearn.metrics import silhouette_score
+
+ss=silhouette_score(x_test,y_pred)
+ss
+
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x='sepal_lenght', y='sepal_width', hue='class', data=df, palette='bright', 
+s=100)
+plt.title('K-means Clustering on Iris Data')
+plt.show()
+
+ 
+
