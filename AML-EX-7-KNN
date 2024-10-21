@@ -1,0 +1,35 @@
+ import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+df=pd.read_csv("C://Users/HP/OneDrive/Desktop/machine learning datasets/IRIS.csv")
+df
+
+x=df[['sepal_lenght','sepal_width','petal_lenght','petal_width']]
+y=df['class']
+
+from sklearn.model_selection import train_test_split
+
+X_train,x_test,Y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=10)
+
+from sklearn.neighbors import KNeighborsClassifier
+
+k=KNeighborsClassifier(n_neighbors=5,algorithm='auto')
+
+k.fit(X_train,Y_train)
+
+y_pred=k.predict(x_test)
+y_pred
+
+from sklearn.metrics import confusion_matrix,classification_report,accuracy_score
+
+cm=confusion_matrix(y_test,y_pred)
+cm
+
+cr=classification_report(y_test,y_pred)
+cr
+
+ac=accuracy_score(y_test,y_pred)
+ac
