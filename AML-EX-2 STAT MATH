@@ -41,3 +41,4 @@ version
 #NumPy is a powerful library for numerical computations and array manipulations.
 #The statistics module provides functions to calculate mathematical statistics of numeric data.
 #The math library provides functions for mathematical operations such as factorials, trigonometry, logarithms, etc.
+#sci-kit learn provides efficient tools for data preprocessing, classification, regression, clustering, and dimensionality reduction.
