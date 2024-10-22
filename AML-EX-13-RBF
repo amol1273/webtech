@@ -16,3 +16,10 @@ y_pred = rbf_svm.predict(x)
 accuracy = accuracy_score(y, y_pred)
 print(f'Predictions: {y_pred}')
 print(f'Accuracy: {accuracy * 100:.2f}%')
+
+#The Radial Basis Function (RBF) is a popular kernel used in Support Vector Machines (SVM) and other machine learning algorithms.
+#It measures the similarity between data points in a non-linear manner.
+
+#The gamma parameter is specific to the RBF kernel and determines the influence of a single training example on the decision boundary.
+# kernel is a function that computes the similarity (or inner product) between two data points in a transformed feature space.
+#It allows SVM to perform non-linear classification by mapping input data into higher-dimensional space without explicitly calculating the coordinates in that space
