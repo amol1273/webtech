@@ -34,5 +34,11 @@ s=100)
 plt.title('K-means Clustering on Iris Data')
 plt.show()
 
- 
+#K-Means Clustering is an unsupervised learning algorithm used to group data points into K clusters based on similarity.
+#It tries to minimize the distance between data points and their respective cluster centroids.
+#The Silhouette Score measures how well a data point fits within its assigned cluster compared to other clusters.
+#It ranges from -1 to 1:
+#1: Perfectly clustered; the point is far from neighboring clusters.
+#0: The point is on or very close to the boundary between clusters.
+#-1: Incorrect clustering; the point is closer to a neighboring cluster than its own.
 
