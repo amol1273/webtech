@@ -33,3 +33,9 @@ cr
 
 ac=accuracy_score(y_test,y_pred)
 ac
+
+#K-Nearest Neighbors (KNN) is a supervised machine learning algorithm used for classification and regression.
+#It classifies a data point based on how its neighbors are classified.
+
+#The accuracy score measures the performance of a classification model by checking
+#the percentage of correct predictions over the total predictions.
