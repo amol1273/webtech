@@ -10,6 +10,14 @@ df1['chest'].mean()
 df1['chest'].median()
 df1['chest'].mode()
 df1['chest'].std()
+mean = df.groupby(["Pop"])["earconch"].mean()
+mean
 
 #df.fillna(mean,inplace= True)   #to fill null values
 #mean = df.groupby(["species"])["sepal_length"].mean()
+#The variance measures how much the data points are spread out
+#from the mean. A higher variance indicates that the data points
+#are more spread, while a lower variance indicates they are closer to the mean.
+#The standard deviation is the square root of the variance.
+#It tells us how much the data deviates, on average, from the mean.
+
