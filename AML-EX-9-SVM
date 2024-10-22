@@ -39,3 +39,9 @@ print('Classification Report ',cr)
 
 ac=accuracy_score(y_test,y_pred)
 print('Accuracy ',ac)
+
+#Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks.
+#It finds the optimal hyperplane that best separates data points belonging to different classes.
+
+#SVC (Support Vector Classifier) is the classification implementation of SVM in the scikit-learn library.
+#It tries to classify data points by finding the best hyperplane and supports linear and non-linear kernels for complex data.
