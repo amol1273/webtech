@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amol's Biography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #020507;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Amol's Biography</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! My name is Amol. I am passionate about learning new things, exploring technologies, and sharing knowledge with others. My journey has been a blend of academic pursuits and personal growth, and I enjoy taking on new challenges every day.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p>I am currently pursuing my studies in engineering. My coursework has allowed me to delve deep into subjects such as mathematics, programming, and physics, preparing me for a future in technology and innovation.</p>
+    </section>
+
+    <section>
+        <h2>Hobbies and Interests</h2>
+        <p>In my free time, I enjoy reading books, coding, and participating in outdoor activities like hiking and cycling. I am also keen on learning about sustainable solutions to modern problems.</p>
+    </section>
+
+    <section>
+        <h2>Connect with Me</h2>
+        <p>If you'd like to learn more about me or connect, feel free to visit my profiles:</p>
+        <ul>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Amol. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
